@@ -1,5 +1,4 @@
-### Maven
-
+### Maven template
 target/
 pom.xml.tag
 pom.xml.releaseBackup
@@ -13,54 +12,28 @@ buildNumber.properties
 # Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
 !/.mvn/wrapper/maven-wrapper.jar
 
-### Eclipse
 
-.metadata
-bin/
-tmp/
-*.tmp
-*.bak
-*.swp
-*~.nib
-local.properties
-.settings/
-.loadpath
-.recommenders
+### Java template
+# Compiled class file
+*.class
 
-# External tool builders
-.externalToolBuilders/
+# Log file
+*.log
 
-# Locally stored "Eclipse launch configurations"
-*.launch
+# BlueJ files
+*.ctxt
 
-# PyDev specific (Python IDE for Eclipse)
-*.pydevproject
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
 
-# CDT-specific (C/C++ Development Tooling)
-.cproject
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
 
-# Java annotation processor (APT)
-.factorypath
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
 
-# PDT-specific (PHP Development Tools)
-.buildpath
-
-# sbteclipse plugin
-.target
-
-# Tern plugin
-.tern-project
-
-# TeXlipse plugin
-.texlipse
-
-# STS (Spring Tool Suite)
-.springBeans
-
-# Code Recommenders
-.recommenders/
-
-# Scala IDE specific (Scala & Java development for Eclipse)
-.cache-main
-.scala_dependencies
-.worksheet
