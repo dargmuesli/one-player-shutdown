@@ -20,6 +20,7 @@
             <resource>
                 <directory>src/</directory>
                 <includes>
+                    <include>config.yml</include>
                     <include>plugin.yml</include>
                 </includes>
             </resource>
