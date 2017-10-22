@@ -1,10 +1,14 @@
 name: one-player-shutdown
 main: de.jonas_thelemann.one_player_shutdown.OnePlayerShutdown
-version: 0.9.1
+version: 1.0.0
 description: Automatically shuts a Minecraft server down when only one player is connected.
 author: Jonas Thelemann
 website: jonas-thelemann.de
 commands:
-   oneplayershutdown:
-      description: Enables or disables the automatic shutdown.
-      usage: /oneplayershutdown [enable | disable]
+  oneplayershutdown:
+    description: Commands for configuring - automatic shutdown.
+    usage: |
+      /<command> [enable, start] - enable One-Player-Shutdown.
+      /<command> [disable, stop] - disable One-Player-Shutdown.
+      /<command> status - whether One-Player-Shutdown is enabled or disabled.
+      /<command> timelimit <seconds> - set the shutdown's timelimit.
