@@ -19,7 +19,7 @@ For me multiplayer servers are there for people to play with one another. To mak
 - `oneplayershutdown` - Commands for configuring automatic shutdown.
   - `/<command> [enable, start]` - enable One-Player-Shutdown.
   - `/<command> [disable, stop]` - disable One-Player-Shutdown.
-  - `/<command> status` - whether One-Player-Shutdown is enabled or disabled.
+  - `/<command> status` - displays the current plugin configuration.
   - `/<command> timelimit <seconds>` - set the shutdown's timelimit.
 
 ## Default Settings
