@@ -6,7 +6,7 @@ author: Jonas Thelemann
 website: jonas-thelemann.de
 commands:
   oneplayershutdown:
-    description: Commands for configuring - automatic shutdown.
+    description: Commands for configuring automatic shutdown.
     usage: |
       /<command> [enable, start] - enable One-Player-Shutdown.
       /<command> [disable, stop] - disable One-Player-Shutdown.

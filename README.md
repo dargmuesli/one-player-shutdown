@@ -14,3 +14,14 @@ Whenever a player is playing alone on a Minecraft Server this plugin enables the
 
 ## Why
 For me multiplayer servers are there for people to play with one another. To make sure nobody feels lonely on my Minecraft server I decided to write this plugin to prevent excessive singleplayer gaming on a multiplayer server.
+
+## Commands
+- `oneplayershutdown` - Commands for configuring automatic shutdown.
+  - `/<command> [enable, start]` - enable One-Player-Shutdown.
+  - `/<command> [disable, stop]` - disable One-Player-Shutdown.
+  - `/<command> status` - whether One-Player-Shutdown is enabled or disabled.
+  - `/<command> timelimit <seconds>` - set the shutdown's timelimit.
+
+## Default Settings
+- `enabled: true`
+- `timelimit: 180`
