@@ -21,6 +21,7 @@ For me multiplayer servers are there for people to play with one another. To mak
   - `/<command> [disable, stop]` - disable One-Player-Shutdown.
   - `/<command> status` - displays the current plugin configuration.
   - `/<command> timelimit <seconds>` - set the shutdown's timelimit.
+  - `/<command> reset` - resets this plugin's configuration.
 
 ## Default Settings
 - `enabled: true`

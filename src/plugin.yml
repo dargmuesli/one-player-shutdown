@@ -12,3 +12,4 @@ commands:
       /<command> [disable, stop] - disable One-Player-Shutdown.
       /<command> status - displays the current plugin configuration.
       /<command> timelimit <seconds> - set the shutdown's timelimit.
+      /<command> reset - resets this plugin's configuration.

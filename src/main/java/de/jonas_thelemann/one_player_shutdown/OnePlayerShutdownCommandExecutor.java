@@ -5,6 +5,8 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
+import java.io.File;
+
 class OnePlayerShutdownCommandExecutor implements CommandExecutor {
     private final OnePlayerShutdown plugin;
 
@@ -68,11 +70,26 @@ class OnePlayerShutdownCommandExecutor implements CommandExecutor {
             }
 
             plugin.getConfig().set("timelimit", Integer.parseInt(args[1]));
+            plugin.secondsUntilShutdown = Integer.parseInt(args[1]);
             plugin.saveConfig();
 
             sender.sendMessage(ChatColor.GOLD + "One-Player-Shutdown timelimit set to " + args[1] + " seconds.");
 
             plugin.updateShutdownTask();
+        } else if (args[0].equalsIgnoreCase("reset")) {
+            if (args.length != 1) {
+                return false;
+            }
+
+            File configFile = new File(plugin.getDataFolder(), "config.yml");
+
+            configFile.delete();
+            plugin.saveDefaultConfig();
+            plugin.reloadConfig();
+            plugin.getServer().getPluginManager().disablePlugin(plugin);
+            plugin.getServer().getPluginManager().enablePlugin(plugin);
+
+            sender.sendMessage(ChatColor.GOLD + "One-Player-Shutdown settings were reset.");
         } else {
             return false;
         }

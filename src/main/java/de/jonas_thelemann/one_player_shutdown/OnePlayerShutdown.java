@@ -16,7 +16,7 @@ public class OnePlayerShutdown extends JavaPlugin {
     protected ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
     protected ScheduledFuture schedule;
     protected int onlinePlayerCount = 0;
-    protected int secondsUntilShutdown = getConfig().getInt("timelimit");
+    protected int secondsUntilShutdown = 0;
 
     @Override
     public void onEnable() {
@@ -26,6 +26,7 @@ public class OnePlayerShutdown extends JavaPlugin {
         getCommand("oneplayershutdown").setExecutor(onePlayerShutdownCommandExecutor);
 
         onlinePlayerCount = getServer().getOnlinePlayers().size();
+        secondsUntilShutdown = getConfig().getInt("timelimit");
     }
 
     protected void updateShutdownTask() {
