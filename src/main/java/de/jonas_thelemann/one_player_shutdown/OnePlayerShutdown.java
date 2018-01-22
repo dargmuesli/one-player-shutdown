@@ -15,7 +15,6 @@ public class OnePlayerShutdown extends JavaPlugin {
     private final OnePlayerShutdownCommandExecutor onePlayerShutdownCommandExecutor = new OnePlayerShutdownCommandExecutor(this);
     protected ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
     protected ScheduledFuture schedule;
-    protected int onlinePlayerCount = 0;
     protected int secondsUntilShutdown = 0;
 
     @Override
@@ -25,12 +24,11 @@ public class OnePlayerShutdown extends JavaPlugin {
         getServer().getPluginManager().registerEvents(onePlayerShutdownListener, this);
         getCommand("oneplayershutdown").setExecutor(onePlayerShutdownCommandExecutor);
 
-        onlinePlayerCount = getServer().getOnlinePlayers().size();
         secondsUntilShutdown = getConfig().getInt("timelimit");
     }
 
     protected void updateShutdownTask() {
-        if (getConfig().getBoolean("enabled") && onlinePlayerCount == 1 && (schedule == null || schedule.isDone())) {
+        if (getConfig().getBoolean("enabled") && onlinePlayers() == 1 && (schedule == null || schedule.isDone())) {
             getLastPlayer().sendMessage(ChatColor.GOLD + "You are the only player on this multiplayer server. If nobody joins within " + getConfig().getInt("timelimit") + " seconds, the server will shutdown.");
             startShutdown();
         }
@@ -49,5 +47,9 @@ public class OnePlayerShutdown extends JavaPlugin {
 
     protected Player getLastPlayer() {
         return Iterables.get(getServer().getOnlinePlayers(), 0);
+    }
+
+    protected int onlinePlayers() {
+        return getServer().getOnlinePlayers().size();
     }
 }
