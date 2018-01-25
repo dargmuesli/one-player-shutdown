@@ -14,13 +14,11 @@ class OnePlayerShutdownListener implements Listener {
 
     @EventHandler
     public void PlayerJoinEvent(PlayerJoinEvent playerJoinEvent) {
-        plugin.onlinePlayerCount++;
         plugin.updateShutdownTask();
     }
 
     @EventHandler
     public void playerQuitEvent(PlayerQuitEvent playerQuitEvent) {
-        plugin.onlinePlayerCount--;
         plugin.updateShutdownTask();
     }
 }

@@ -15,7 +15,7 @@ class OnePlayerShutdownRunnable implements Runnable {
             return;
         }
 
-        if (plugin.onlinePlayerCount >= 2) {
+        if (plugin.onlinePlayers() >= 2) {
             plugin.stopShutdown(ChatColor.GOLD + "Somebody joined. The server won't shutdown.");
             return;
         }
