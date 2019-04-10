@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Dargmuesli/one-player-shutdown.svg?branch=master)](https://travis-ci.org/Dargmuesli/one-player-shutdown)
+[![Build Status](https://travis-ci.org/dargmuesli/one-player-shutdown.svg?branch=master)](https://travis-ci.org/dargmuesli/one-player-shutdown)
 [![Known Vulnerabilities](https://snyk.io/test/github/dargmuesli/one-player-shutdown/badge.svg)](https://snyk.io/test/github/dargmuesli/one-player-shutdown)
 
 # OnePlayerShutdown
