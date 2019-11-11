@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/dargmuesli/one-player-shutdown.svg?branch=master)](https://travis-ci.org/dargmuesli/one-player-shutdown)
+[![build status](https://travis-ci.com/dargmuesli/one-player-shutdown.svg?branch=master)](https://travis-ci.com/one-player-shutdown/1generator "build status")
 
 # OnePlayerShutdown
 Automatically shuts a Minecraft server down when only one player is connected.
