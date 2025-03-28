@@ -1,4 +1,5 @@
-[![build status](https://travis-ci.com/dargmuesli/one-player-shutdown.svg?branch=master)](https://travis-ci.com/one-player-shutdown/1generator "build status")
+[![ci status][ci-image]][ci-url]
+[ci-image]: https://img.shields.io/github/actions/workflow/status/dargmuesli/one-player-shutdown/ci.yml
 
 # OnePlayerShutdown
 Automatically shuts a Minecraft server down when only one player is connected.
