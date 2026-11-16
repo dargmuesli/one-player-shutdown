@@ -25,6 +25,16 @@
             </resource>
         </resources>
     </build>
+    <dependencyManagement>
+        <dependencies>
+            <!-- spigot-api 26.3 pulls guava 33.6.0, affected by GHSA-xxph-c9ww-hj94; remove once spigot-api brings 33.7.2 or later -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>33.8.0-jre</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
     <dependencies>
         <dependency>
             <groupId>org.spigotmc</groupId>
