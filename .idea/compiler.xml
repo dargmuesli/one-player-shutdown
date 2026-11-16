@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="one-player-shutdown" target="1.9" />
+      <module name="one-player-shutdown" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>
